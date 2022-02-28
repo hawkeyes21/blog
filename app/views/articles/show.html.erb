@@ -1,3 +1,7 @@
 <h1> Displaying a single article </h1>
 
 <p> <%= @article.title%> - <%= @article.body%> </p>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+</ul>
